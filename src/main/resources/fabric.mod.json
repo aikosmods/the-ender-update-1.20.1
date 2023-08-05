@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "theenderupdate",
+	"version": "${version}",
+	"name": "The Ender Update",
+	"description": "The Nether Update but for the End",
+	"authors": [
+		"WEEB goddess on discord!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/theenderupdate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aiko.theenderupdate.TheEnderUpdate"
+		],
+		"client": [
+			"net.aiko.theenderupdate.TheEnderUpdateClient"
+		],
+		"fabric-datagen": [
+			"net.aiko.theenderupdate.TheEnderUpdateDataGenerator"
+		]
+	},
+	"mixins": [
+		"theenderupdate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
